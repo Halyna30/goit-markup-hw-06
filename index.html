@@ -510,14 +510,19 @@
           id=""
           placeholder="Комментарий"
         ></textarea>
-        <div class="chekbox">
-          <input type="checkbox" name="terms-of-use" id="terms-of-use" />
-          <label for="terms-of-use"
+        <label class="chekbox">
+          <input
+            type="checkbox"
+            name="terms-of-use"
+            class="chekbox-input visually-hidden"
+            value="user-accept"
+          />
+          <span class="chekbox-icon"></span>
+          <span
             >Соглашаюсь с рассылкой и принимаю
-            <a href="#">Условия договора</a></label
-          >
-        </div>
-
+            <a href="#" class="chekbox-link">Условия договора</a></span
+          ></label
+        >
         <button type="submit" class="button main-form-btn">Отправить</button>
       </form>
     </div>
