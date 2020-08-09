@@ -668,6 +668,11 @@ div > b {
   border-radius: 4px;
 }
 
+.user-message:focus {
+  border: 1px solid #2196f3;
+  outline: 1px solid #2196f3;
+}
+
 .chekbox {
   display: flex;
   justify-content: center;
