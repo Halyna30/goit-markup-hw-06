@@ -385,7 +385,7 @@
       <div class="container footer-container">
         <div class="footer-contacts">
           <a href="/" class="footer-logo"><span>Web</span> Studio </a>
-          <ul class="footer-contacts">
+          <ul class="footer-list-contacts">
             <li class="footer-text footer-item">
               <address>г. Киев, пр-т Леси Украинки, 26</address>
             </li>
@@ -473,7 +473,7 @@
             name="user-name"
             placeholder=" "
           />
-          <label for="name" class="contact-form-label">Имя</label>
+          <label for="name" class="contact-form-label label-name">Имя</label>
           <svg class="contact-form-svg" width="12" height="12">
             <use href="./images/sprite.svg#icon-man"></use>
           </svg>
@@ -486,7 +486,9 @@
             name="user-phone"
             placeholder=" "
           />
-          <label for="phone" class="contact-form-label">Телефон</label>
+          <label for="phone" class="contact-form-label label-phone"
+            >Телефон</label
+          >
           <svg class="contact-form-svg" width="13" height="13">
             <use href="./images/sprite.svg#handset"></use>
           </svg>
@@ -499,17 +501,25 @@
             name="user-email"
             placeholder=" "
           />
-          <label for="email" class="contact-form-label">Почта</label>
+          <label for="email" class="contact-form-label label-email"
+            >Почта</label
+          >
           <svg class="contact-form-svg" width="15" height="12">
             <use href="./images/sprite.svg#envelope2"></use>
           </svg>
         </div>
-        <textarea
-          class="user-message"
-          name="user-message"
-          id=""
-          placeholder="Комментарий"
-        ></textarea>
+        <div class="form-input form-input-message">
+          <textarea
+            class="user-message"
+            name="user-message"
+            id="message"
+            placeholder=" "
+          ></textarea>
+          <label for="message" class="contact-form-label label-message"
+            >Комментарий</label
+          >
+        </div>
+
         <label class="chekbox">
           <input
             type="checkbox"
